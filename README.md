@@ -1,6 +1,6 @@
 # Service Monitor
 
-Monitor processes and acces shortcuts to common commands e.g start and stop directly from the menubar.
+Monitor processes and access shortcuts to common commands e.g start and stop directly from the status bar.
 You can change what processes and commands to use, it comes preloaded with a default set for Apache, MySQL and Memcache if you have it installed via macports.
 
 <img src="http://www.expono.com/go/photo/771436_m.jpg" width="347" height="168" alt="Service monitor" />
