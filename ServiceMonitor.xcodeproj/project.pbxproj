@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
 		5B0791CC127225E100015EEB /* AuthenticatedCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B0791CB127225E100015EEB /* AuthenticatedCommand.m */; };
-		5B0791D2127226D100015EEB /* AuthenticatedCommand in Resources */ = {isa = PBXBuildFile; fileRef = 5B0791BC1272259E00015EEB /* AuthenticatedCommand */; };
 		5B07926C12722BD000015EEB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B07926B12722BD000015EEB /* Security.framework */; };
 		5B07927912722C0E00015EEB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B07926B12722BD000015EEB /* Security.framework */; };
 		5B16C2B612889A5E0038037C /* bullet-green.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B16C2B512889A5E0038037C /* bullet-green.png */; };
@@ -22,6 +21,7 @@
 		5B16C2C812889B080038037C /* ServiceMonitorMenuDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B16C2C412889B080038037C /* ServiceMonitorMenuDelegate.m */; };
 		5B16C2CA12889E130038037C /* ServiceDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B16C2C912889E130038037C /* ServiceDefaults.plist */; };
 		5BB5DAD512730ACF00E140A2 /* Credits.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5BB5DAD412730ACF00E140A2 /* Credits.txt */; };
+		5BF0FE4D1289A91B002C5DAC /* AuthenticatedCommand in Resources */ = {isa = PBXBuildFile; fileRef = 5B0791BC1272259E00015EEB /* AuthenticatedCommand */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -63,6 +63,7 @@
 		5B16C2C412889B080038037C /* ServiceMonitorMenuDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ServiceMonitorMenuDelegate.m; path = Classes/ServiceMonitorMenuDelegate.m; sourceTree = "<group>"; };
 		5B16C2C912889E130038037C /* ServiceDefaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ServiceDefaults.plist; path = Resources/ServiceDefaults.plist; sourceTree = "<group>"; };
 		5BB5DAD412730ACF00E140A2 /* Credits.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Credits.txt; sourceTree = "<group>"; };
+		5BF0FE321289A824002C5DAC /* AuthenticatedCommand */ = {isa = PBXFileReference; lastKnownFileType = text; name = AuthenticatedCommand; path = /Users/martin/Documents/coding/cocoa/ServiceMonitor/AuthenticatedCommand; sourceTree = "<absolute>"; };
 		8D1107310486CEB800E47090 /* ServiceMonitor-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ServiceMonitor-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* ServiceMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ServiceMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -135,6 +136,7 @@
 		29B97314FDCFA39411CA2CEA /* ServiceMonitor */ = {
 			isa = PBXGroup;
 			children = (
+				5BF0FE321289A824002C5DAC /* AuthenticatedCommand */,
 				5BB5DADE12730B0900E140A2 /* Gfx */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
@@ -254,7 +256,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B0791D2127226D100015EEB /* AuthenticatedCommand in Resources */,
+				5BF0FE4D1289A91B002C5DAC /* AuthenticatedCommand in Resources */,
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
 				5BB5DAD512730ACF00E140A2 /* Credits.txt in Resources */,

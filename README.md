@@ -9,7 +9,7 @@ For Mac OS X 10.6 Snow Leopard.
 
 ## Installation
 
-- [Download Service Monitor](http://martinj.net/files/system-monitor.zip)
+- [Download Service Monitor](http://martinj.net/wp-content/uploads/2010/11/ServiceMonitor.zip)
 
 - Unzip the file and move Service Monitor to your Applications folder.
 
