@@ -118,6 +118,10 @@
 	CommandRunner *runner = [[CommandRunner alloc] initWithCommands:commands authenticate:superUser];
 	[runner performSelectorInBackground:@selector(runCommands) withObject:nil];
 	[runner release];
+
+	if (![NSApp isActive]) {
+		[NSApp activateIgnoringOtherApps:YES];
+	}
 }
 
 - (void)dealloc {

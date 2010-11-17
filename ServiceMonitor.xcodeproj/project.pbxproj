@@ -63,7 +63,6 @@
 		5B16C2C412889B080038037C /* ServiceMonitorMenuDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ServiceMonitorMenuDelegate.m; path = Classes/ServiceMonitorMenuDelegate.m; sourceTree = "<group>"; };
 		5B16C2C912889E130038037C /* ServiceDefaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ServiceDefaults.plist; path = Resources/ServiceDefaults.plist; sourceTree = "<group>"; };
 		5BB5DAD412730ACF00E140A2 /* Credits.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Credits.txt; sourceTree = "<group>"; };
-		5BF0FE321289A824002C5DAC /* AuthenticatedCommand */ = {isa = PBXFileReference; lastKnownFileType = text; name = AuthenticatedCommand; path = /Users/martin/Documents/coding/cocoa/ServiceMonitor/AuthenticatedCommand; sourceTree = "<absolute>"; };
 		8D1107310486CEB800E47090 /* ServiceMonitor-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ServiceMonitor-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* ServiceMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ServiceMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -136,7 +135,6 @@
 		29B97314FDCFA39411CA2CEA /* ServiceMonitor */ = {
 			isa = PBXGroup;
 			children = (
-				5BF0FE321289A824002C5DAC /* AuthenticatedCommand */,
 				5BB5DADE12730B0900E140A2 /* Gfx */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
