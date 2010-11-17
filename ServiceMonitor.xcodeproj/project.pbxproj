@@ -21,6 +21,7 @@
 		5B16C2C812889B080038037C /* ServiceMonitorMenuDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B16C2C412889B080038037C /* ServiceMonitorMenuDelegate.m */; };
 		5B16C2CA12889E130038037C /* ServiceDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B16C2C912889E130038037C /* ServiceDefaults.plist */; };
 		5BB5DAD512730ACF00E140A2 /* Credits.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5BB5DAD412730ACF00E140A2 /* Credits.txt */; };
+		5BD68E1C1294412400109152 /* PFMoveApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BD68E1B1294412400109152 /* PFMoveApplication.m */; };
 		5BF0FE4D1289A91B002C5DAC /* AuthenticatedCommand in Resources */ = {isa = PBXBuildFile; fileRef = 5B0791BC1272259E00015EEB /* AuthenticatedCommand */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
@@ -63,6 +64,8 @@
 		5B16C2C412889B080038037C /* ServiceMonitorMenuDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ServiceMonitorMenuDelegate.m; path = Classes/ServiceMonitorMenuDelegate.m; sourceTree = "<group>"; };
 		5B16C2C912889E130038037C /* ServiceDefaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ServiceDefaults.plist; path = Resources/ServiceDefaults.plist; sourceTree = "<group>"; };
 		5BB5DAD412730ACF00E140A2 /* Credits.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Credits.txt; sourceTree = "<group>"; };
+		5BD68E1A1294412400109152 /* PFMoveApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PFMoveApplication.h; path = Classes/LetsMove/PFMoveApplication.h; sourceTree = "<group>"; };
+		5BD68E1B1294412400109152 /* PFMoveApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PFMoveApplication.m; path = Classes/LetsMove/PFMoveApplication.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* ServiceMonitor-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ServiceMonitor-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* ServiceMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ServiceMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -91,6 +94,8 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				5BD68E1A1294412400109152 /* PFMoveApplication.h */,
+				5BD68E1B1294412400109152 /* PFMoveApplication.m */,
 				5B16C2BD12889B080038037C /* CommandRunner.h */,
 				5B16C2BE12889B080038037C /* CommandRunner.m */,
 				5B16C2BF12889B080038037C /* JAProcessInfo.h */,
@@ -286,6 +291,7 @@
 				5B16C2C612889B080038037C /* JAProcessInfo.m in Sources */,
 				5B16C2C712889B080038037C /* ServiceMonitorAppDelegate.m in Sources */,
 				5B16C2C812889B080038037C /* ServiceMonitorMenuDelegate.m in Sources */,
+				5BD68E1C1294412400109152 /* PFMoveApplication.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

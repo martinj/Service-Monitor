@@ -31,6 +31,7 @@
 #import "ServiceMonitorAppDelegate.h"
 #import "JAProcessInfo.h"
 #import "CommandRunner.h"
+#import "PFMoveApplication.h"
 
 @interface ServiceMonitorAppDelegate (Private)
 - (void)loadDefaults;
@@ -40,6 +41,11 @@
 @implementation ServiceMonitorAppDelegate
 
 @synthesize window, statusMenu, itemMap;
+
+- (void)applicationWillFinishLaunching:(NSNotification *)aNotification
+{
+	PFMoveToApplicationsFolderIfNecessary();
+}
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
 	[self loadDefaults];
