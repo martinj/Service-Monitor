@@ -6,6 +6,21 @@
 	objectVersion = 45;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		5BD68E751294890200109152 /* Deployment */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 5BD68E7E1294891300109152 /* Build configuration list for PBXAggregateTarget "Deployment" */;
+			buildPhases = (
+				5BD68E741294890200109152 /* ShellScript */,
+			);
+			dependencies = (
+				5BD68E801294895000109152 /* PBXTargetDependency */,
+			);
+			name = Deployment;
+			productName = Deployment;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
 		5B0791CC127225E100015EEB /* AuthenticatedCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B0791CB127225E100015EEB /* AuthenticatedCommand.m */; };
@@ -20,23 +35,56 @@
 		5B16C2C712889B080038037C /* ServiceMonitorAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B16C2C212889B080038037C /* ServiceMonitorAppDelegate.m */; };
 		5B16C2C812889B080038037C /* ServiceMonitorMenuDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B16C2C412889B080038037C /* ServiceMonitorMenuDelegate.m */; };
 		5B16C2CA12889E130038037C /* ServiceDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B16C2C912889E130038037C /* ServiceDefaults.plist */; };
+		5B26D769129BF812008E98AD /* AuthenticatedCommand in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5B0791BC1272259E00015EEB /* AuthenticatedCommand */; };
 		5BB5DAD512730ACF00E140A2 /* Credits.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5BB5DAD412730ACF00E140A2 /* Credits.txt */; };
 		5BD68E1C1294412400109152 /* PFMoveApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BD68E1B1294412400109152 /* PFMoveApplication.m */; };
-		5BF0FE4D1289A91B002C5DAC /* AuthenticatedCommand in Resources */ = {isa = PBXBuildFile; fileRef = 5B0791BC1272259E00015EEB /* AuthenticatedCommand */; };
+		5BD68E3B12947ACA00109152 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BD68E3A12947ACA00109152 /* Sparkle.framework */; };
+		5BD68E4712947B0B00109152 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5BD68E3A12947ACA00109152 /* Sparkle.framework */; };
+		5BD68E5612947C8B00109152 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 5BD68E5512947C8B00109152 /* dsa_pub.pem */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5B0791D6127226FC00015EEB /* PBXContainerItemProxy */ = {
+		5B26D75E129BF7DE008E98AD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 5B0791BB1272259E00015EEB;
 			remoteInfo = AuthenticatedCommand;
 		};
+		5BD68E7F1294895000109152 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D1107260486CEB800E47090;
+			remoteInfo = ServiceMonitor;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5B26D784129BF905008E98AD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				5B26D769129BF812008E98AD /* AuthenticatedCommand in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BD68E5312947B0F00109152 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5BD68E4712947B0B00109152 /* Sparkle.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -66,6 +114,8 @@
 		5BB5DAD412730ACF00E140A2 /* Credits.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Credits.txt; sourceTree = "<group>"; };
 		5BD68E1A1294412400109152 /* PFMoveApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PFMoveApplication.h; path = Classes/LetsMove/PFMoveApplication.h; sourceTree = "<group>"; };
 		5BD68E1B1294412400109152 /* PFMoveApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PFMoveApplication.m; path = Classes/LetsMove/PFMoveApplication.m; sourceTree = "<group>"; };
+		5BD68E3A12947ACA00109152 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = Frameworks/Sparkle.framework; sourceTree = "<group>"; };
+		5BD68E5512947C8B00109152 /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = dsa_pub.pem; path = Resources/dsa_pub.pem; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* ServiceMonitor-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ServiceMonitor-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* ServiceMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ServiceMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -85,6 +135,7 @@
 			files = (
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				5B07926C12722BD000015EEB /* Security.framework in Frameworks */,
+				5BD68E3B12947ACA00109152 /* Sparkle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +165,7 @@
 			children = (
 				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
 				5B07926B12722BD000015EEB /* Security.framework */,
+				5BD68E3A12947ACA00109152 /* Sparkle.framework */,
 			);
 			name = "Linked Frameworks";
 			sourceTree = "<group>";
@@ -162,6 +214,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5BD68E5512947C8B00109152 /* dsa_pub.pem */,
 				5B16C2C912889E130038037C /* ServiceDefaults.plist */,
 				8D1107310486CEB800E47090 /* ServiceMonitor-Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
@@ -217,11 +270,14 @@
 				8D1107290486CEB800E47090 /* Resources */,
 				8D11072C0486CEB800E47090 /* Sources */,
 				8D11072E0486CEB800E47090 /* Frameworks */,
+				5B2889BF129ACC8800D1F0EE /* ShellScript */,
+				5B26D784129BF905008E98AD /* CopyFiles */,
+				5BD68E5312947B0F00109152 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				5B0791D7127226FC00015EEB /* PBXTargetDependency */,
+				5B26D75F129BF7DE008E98AD /* PBXTargetDependency */,
 			);
 			name = ServiceMonitor;
 			productInstallPath = "$(HOME)/Applications";
@@ -250,6 +306,7 @@
 			targets = (
 				8D1107260486CEB800E47090 /* ServiceMonitor */,
 				5B0791BB1272259E00015EEB /* AuthenticatedCommand */,
+				5BD68E751294890200109152 /* Deployment */,
 			);
 		};
 /* End PBXProject section */
@@ -259,7 +316,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BF0FE4D1289A91B002C5DAC /* AuthenticatedCommand in Resources */,
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
 				5BB5DAD512730ACF00E140A2 /* Credits.txt in Resources */,
@@ -268,10 +324,41 @@
 				5B16C2BB12889ABC0038037C /* Icon.icns in Resources */,
 				5B16C2BC12889ABC0038037C /* menu-icon.png in Resources */,
 				5B16C2CA12889E130038037C /* ServiceDefaults.plist in Resources */,
+				5BD68E5612947C8B00109152 /* dsa_pub.pem in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5B2889BF129ACC8800D1F0EE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = "/usr/bin/perl -w";
+			shellScript = "# Auto increment version number from build common file\n\nuse strict;\ndie \"$0: Must be run from Xcode\" unless $ENV{\"BUILT_PRODUCTS_DIR\"};\n\n# Get the current revision number and use it to set the CFBundleVersion value\nopen FH, \"build.count\" or die;\nmy $version = join(\"\", <FH>);\nclose(FH);\n\n++$version;\nprint \"Build $version\\n\"; \n\nopen FH, \">build.count\" or die;\nprint FH $version;\nclose(FH);\n\n# Update info.plist in build product. Use defaults command\n\nmy $INFO = \"$ENV{BUILT_PRODUCTS_DIR}/$ENV{WRAPPER_NAME}/Contents/Info\";\nmy @defaults = ( 'defaults', 'write', $INFO, 'CFBundleVersion', \"$version\" );\nexec @defaults;";
+		};
+		5BD68E741294890200109152 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /usr/bin/ruby;
+			shellScript = "#!/usr/bin/env ruby -w\n\nclass AppCast\n  require 'yaml'\n  require 'tmpdir'\n  require 'fileutils'\n\n  MESSAGE_HEADER    = 'APPCAST BUILD MESSAGE'\n\n  def initialize\n    @signature = ''\n\n   # ---------------------\n    # edit this path to point to your folder that contains all your appcast application configs\n    @configs_folder_path = '/Users/martin/Documents/coding/Appcasts/Configs/'\n    # ---------------------\n\n   require_release_build    \n    load_config_file\n    instantiate_project_variables\n    instantiate_appcast_variables\n  end\n\n  def main_worker_bee\n    create_appcast_folder_and_files\n    remove_old_zip_create_new_zip\n    file_stats\n    create_key\n    create_appcast_xml\n    copy_archive_to_appcast_path\n  end\n\n  # Only works for Release builds\n  # Exits upon failure\n  def require_release_build\n      if ENV[\"BUILD_STYLE\"] != 'Release'\n        log_message(\"Deployment target requires 'Release' build style\")\n        exit\n      end\n  end\n\n  # Exits if no config.yaml file found.\n  def load_config_file\n  \tproject_name = ENV['PROJECT_NAME']\n  \tconfig_file_path = \"#{@configs_folder_path}#{project_name}.yaml\"\n\tif !File.exists?(config_file_path)\n      log_message(\"No '#{project_name}.yaml' file found in configs directory.\")\n      exit\n    end\n    @config = YAML.load_file(config_file_path)\n  end\n\n  def instantiate_project_variables\n    @proj_dir               = ENV['BUILT_PRODUCTS_DIR']\n    @proj_name              = ENV['PROJECT_NAME']\n    @proj_suffix            = @config['project_suffix']\n    @version                = `defaults read \"#{@proj_dir}/#{@proj_name}.#{@proj_suffix}/Contents/Info\" CFBundleVersion`\n    @version                = @version.gsub(/\\D+/,\"\")\n    @short_version          = `defaults read \"#{@proj_dir}/#{@proj_name}.#{@proj_suffix}/Contents/Info\" CFBundleShortVersionString`\n    @archive_filename       = \"#{@proj_name} #{@short_version.chomp}-#{@version.chomp}.zip\"\n    @package_filename       = \"#{@proj_name}.pkg\"\n    @archive_path           = \"#{@proj_dir}/#{@archive_filename}\"\n  end\n\n  def instantiate_appcast_variables\n    @appcast_xml_name       = \"#{@config['appcast_xml_name'].chomp} #{@version.chomp}.xml\"\n    @appcast_basefolder     = @config['appcast_basefolder'].chomp\n    @appcast_proj_folder    = \"#{@config['appcast_basefolder']}/#{@proj_name}_#{@short_version}\".chomp\n    @appcast_xml_path       = \"#{@appcast_proj_folder}/#{@appcast_xml_name}\"\n    @download_base_url      = @config['download_base_url']\n    @keychain_privkey_name  = @config['keychain_privkey_name']\n    @download_url           = \"#{@download_base_url}#{@archive_filename}\"\n  end\n\n  def remove_old_zip_create_new_zip\n    Dir.chdir(@proj_dir)\n    `rm -f #{@proj_name}*.zip`\n    \n    if !@config['packagemaker_file'].nil?\n      log_message(\"Creating package\")\n      `/Developer/Applications/Utilities/PackageMaker.app/Contents/MacOS/PackageMaker --doc #{@config['packagemaker_file']} --out #{@package_filename}`\n      `zip -qr \"#{@archive_filename}\" \"#{@package_filename}\"`  \n    else\n      `zip -qr \"#{@archive_filename}\" \"#{@proj_name}.#{@proj_suffix}\"`  \n    end\n  end\n\n  def copy_archive_to_appcast_path\n    begin\n      FileUtils.cp(@archive_path, @appcast_proj_folder)\n    rescue\n      log_message(\"There was an error copying the zip file to appcast folder\\nError: #{$!}\")\n    end\n  end\n\n  def file_stats\n    @size     = File.size(@archive_filename)\n    @pubdate  = `date +\"%a, %d %b %G %T %z\"`\n  end\n\n  def create_key\n    priv_key_path = \"#{Dir.tmpdir}/priv_key.pem\"\n\tintermed_file = \"#{Dir.tmpdir}/intermed_data\"\n    temp = `security find-generic-password -g -s \"#{@keychain_privkey_name}\" 2>&1 1>/dev/null \\\n\t\t\t\t| perl -pe '($_) = /\"(.+)\"/'`\n\n\t File.open(intermed_file, 'w+') { |f| f.puts temp.split(\"\\\\012\") }\n\n\t key = `perl -MXML::LibXML -e 'print XML::LibXML->new()->parse_file(\"#{intermed_file}\")->findvalue(q(//string[preceding-sibling::key[1] = \"NOTE\"]))'`\n\n\tlog_message(key)\n    if key == ''\n      log_message(\"Unable to load signing private key with name '#{@keychain_privkey_name}' from keychain\\nFor file #{@archive_filename}\")\n      exit\n    end\n\n   File.open(priv_key_path, 'w+') { |f| f.puts key }\n\n   @signature = `openssl dgst -sha1 -binary < '#{@archive_path}' \\\n                   | openssl dgst -dss1 -sign '#{priv_key_path}' \\\n                   | openssl enc -base64`\n\n    `rm -fP #{priv_key_path}`\n\t`rm -fP #{intermed_file}`\n    log_message(@signature)\n\n    if @signature == ''\n      log_message(\"Unable to sign file #{@archive_filename}\")\n      exit\n    end\n  end\n\n  def create_appcast_xml\n   # if the file exists it may have already been edited\n   # so dont overwrite it\n   if !File.exists?(@appcast_xml_path)\n\n     appcast_xml =\n    \"<item>\n\t<title>Version #{@short_version.chomp}</title>\n\t <description><![CDATA[\n\t\t<h2>New in #{@short_version.chomp}</h2>\n\t\t<ul>\n                <li>Item 1</li>\n                <li>Item 2</li>\n         </ul>\n\n\t\t]]></description>\n     <pubDate>#{@pubdate.chomp}</pubDate>\n\t<enclosure\n\t\turl=\\\"#{@download_url.chomp}\\\"\n\t\tsparkle:version=\\\"#{@version.chomp}\\\"\n\t\tsparkle:shortVersionString=\\\"#{@short_version.chomp}\\\"\n\t\ttype=\\\"application/octet-stream\\\"\n\t\tlength=\\\"#{@size}\\\"\n\t\tsparkle:dsaSignature=\\\"#{@signature.chomp}\\\"\n\t/>\n    </item>\"\n\n    File.open(@appcast_xml_path, 'w') { |f| f.puts appcast_xml }\n\telse\n\t\tupdate_appcast_xml\n    end\n  end\n\n  def update_appcast_xml\n  \tnew_enclosure = \"<pubDate>#{@pubdate.chomp}</pubDate>\n\t<enclosure\n\t\turl=\\\"#{@download_url.chomp}\\\"\n\t\tsparkle:version=\\\"#{@version.chomp}\\\"\n\t\tsparkle:shortVersionString=\\\"#{@short_version.chomp}\\\"\n\t\ttype=\\\"application/octet-stream\\\"\n\t\tlength=\\\"#{@size}\\\"\n\t\tsparkle:dsaSignature=\\\"#{@signature.chomp}\\\"\n\t/>\n    </item>\"\n\n    File.open(@appcast_xml_path, 'r+') do |f|\n    lines = f.readlines\n\tcount = 0\n\t# remove all lines after and including the pubDate tag\n    lines.each do |it|\n       \tif it =~ /<pubDate>/\n       \t\tbreak\n       \tend\n    \tcount += 1\n    end\n    lines.slice!(count..-1)\n    f.pos = 0\n    f.print lines\n\t# add the new enclosure tags and close item tag\n    f.print new_enclosure\n    f.truncate(f.pos)\n\tend\n\n  end\n\n  # Creates the appcast folder if it does not exist\n  # or is accidently moved or deleted\n\n  def create_appcast_folder_and_files\n    base_folder = @appcast_basefolder\n    project_folder = @appcast_proj_folder\n\n    Dir.mkdir(base_folder)    if !File.exists?(base_folder)\n    Dir.mkdir(project_folder) if !File.exists?(project_folder)\n  end\n\n  def log_message(msg)\n    puts \"\\n\\n----------------------------------------------\"\n    puts MESSAGE_HEADER\n    puts msg\n    puts \"----------------------------------------------\\n\\n\"\n  end\nend\n\nif __FILE__ == $0\n  newAppcast = AppCast.new\n  newAppcast.main_worker_bee\n  newAppcast.log_message(\"It appears all went well with the build script!\")\nend";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5B0791B91272259E00015EEB /* Sources */ = {
@@ -298,10 +385,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5B0791D7127226FC00015EEB /* PBXTargetDependency */ = {
+		5B26D75F129BF7DE008E98AD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 5B0791BB1272259E00015EEB /* AuthenticatedCommand */;
-			targetProxy = 5B0791D6127226FC00015EEB /* PBXContainerItemProxy */;
+			targetProxy = 5B26D75E129BF7DE008E98AD /* PBXContainerItemProxy */;
+		};
+		5BD68E801294895000109152 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D1107260486CEB800E47090 /* ServiceMonitor */;
+			targetProxy = 5BD68E7F1294895000109152 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -329,6 +421,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)";
+				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -352,6 +446,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)";
+				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
@@ -371,11 +467,36 @@
 			};
 			name = Release;
 		};
+		5BD68E761294890200109152 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = Deployment;
+			};
+			name = Debug;
+		};
+		5BD68E771294890200109152 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = Deployment;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 		C01FCF4B08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Frameworks\"",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
@@ -393,6 +514,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Frameworks\"",
+				);
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ServiceMonitor_Prefix.pch;
@@ -436,6 +561,15 @@
 			buildConfigurations = (
 				5B0791BE1272259F00015EEB /* Debug */,
 				5B0791BF1272259F00015EEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BD68E7E1294891300109152 /* Build configuration list for PBXAggregateTarget "Deployment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BD68E761294890200109152 /* Debug */,
+				5BD68E771294890200109152 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
